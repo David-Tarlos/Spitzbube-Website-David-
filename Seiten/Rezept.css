@@ -1,3 +1,117 @@
 * {
-  background-color: blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /*header, also Navbar*/
+    
+    body {
+        background: linear-gradient(135deg, #0b0b0b, #383838);
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: 22px;
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: 700;        
+
+    }
+
+    .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: whitesmoke;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    .navbar a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background:white;
+    }
+    .navbar a:hover::before {
+        width: 100%;
+    }
+
+        
 }
+
+
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .anleitung-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 80px;
+
+  }
+  
+ 
+  .schritt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schritt:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .bild {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  
+  .schritt + .schritt {
+    margin-top: 20px;
+  }
+  
