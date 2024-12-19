@@ -12,6 +12,7 @@
         height: 150vh;
         margin: 0;
         font-family: Arial, sans-serif;
+        
       }
     
     .header {
@@ -120,6 +121,8 @@
     font-size: 40px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: slideUp;
+    animation-duration: 4s;
 }
 
 .text1 {
@@ -128,6 +131,8 @@
     padding-bottom: 50px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: slideUp;
+    animation-duration: 4s;
 }
 
 
@@ -203,4 +208,27 @@
 
 .button {
     margin: 100px;
+}
+
+.Santa img {
+  position: relative; 
+  animation-name: moveSanta; 
+  animation-duration: 4s; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite; 
+  padding-right: 300px;
+  width: 90%;
+  animation-name: slideLeft;
+  animation-duration: 5s;
+  
+}
+
+
+
+
+@keyframes slideLeft {
+  from{transform: translateX(-50%)}
+}
+@keyframes slideUp {
+  from{transform: translateY(50%);}
 }
